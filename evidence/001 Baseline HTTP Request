@@ -1,0 +1,35 @@
+# Evidence 001 — Baseline HTTP Request
+
+## Objective
+
+Observe a normal HTTP request and response from the local OWASP Juice Shop application using Burp Suite Community Edition.
+
+## Environment
+
+* Target: OWASP Juice Shop
+* URL: `http://localhost:3000`
+* Tool: Burp Suite Community Edition
+* Browser: Burp's built-in browser
+
+## Request Details
+
+* HTTP method: `GET`
+* Request path: `/`
+* Host: `localhost:3000`
+* Response status: `200 OK`
+
+## Observation
+
+I used Burp Suite HTTP history to inspect a normal request generated while opening the local Juice Shop application. The browser requested the root path, `/`, and the server returned a successful HTTP response with status code 200.
+
+## Security Relevance
+
+Inspecting HTTP requests and responses helps a security analyst understand how a web application communicates with a browser. This baseline will help me compare normal behaviour with the behaviour observed during later security tests.
+
+## Evidence
+
+Screenshot: `evidence-001-http-history.png`
+
+## Result
+
+A baseline HTTP request was successfully observed. No vulnerability was established by this request alone.
