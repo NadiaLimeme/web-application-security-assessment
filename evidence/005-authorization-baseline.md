@@ -45,3 +45,13 @@ The application restricted access to account features through normal navigation 
 ### Status
 
 Normal post-logout behaviour observed.
+
+### Unauthenticated Access Check — Pending Verification
+
+* **Endpoint:** `GET /rest/user/whoami`
+* **Observed status:** `200 OK`
+* **Test condition:** The user believed they were logged out.
+* **Observation:** The response contained a `user` object in JSON format. Whether it contained actual account information has not yet been confirmed.
+* **Verification status:** Pending.
+* **Next action:** Check whether the request included a session cookie or authorization credentials. Verify the response content without exposing sensitive information.
+* **Conclusion:** No confirmed vulnerability at this stage.
