@@ -42,7 +42,7 @@ Testing follows a structured approach: establish a baseline, perform controlled 
 
 ## Status
 
-Initial documentation and evidence have been committed to GitHub. The assessment is ongoing.
+Initial documentation and evidence have been committed to GitHub. The assessment is completed.
 
 ## Responsible Testing
 
